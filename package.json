@@ -6,7 +6,9 @@
         "format": "npx prettier . --write",
         "format:check": "npx prettier . --check",
         "start": "node server.js",
-        "test": "jest"
+        "test": "jest",
+        "lint": "npx eslint .",
+        "lint:fix": "npx eslint . --fix"
     },
     "keywords": [],
     "author": "",
@@ -16,6 +18,9 @@
         "express": "^5.2.1"
     },
     "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.9.1",
+        "globals": "^17.11.0",
         "jest": "^30.2.0",
         "prettier": "3.8.1",
         "supertest": "^7.2.2"
